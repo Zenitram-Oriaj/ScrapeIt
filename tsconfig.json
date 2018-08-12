@@ -1,0 +1,42 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+    "outDir": "./build/",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,             // allow a partial TypeScript and JavaScript codebase
+    "declaration": false,
+    "isolatedModules": false,
+    "listFiles": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noLib": false,
+		"noUnusedLocals": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,    
+    "target": "es6",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2015",
+    ],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true
+	},
+	"include": [
+    "./src/server/**/*",
+    "./src/client/**/*"
+	],
+	"exclude": [
+		"node_modules",
+    "build",
+    "static", 
+    "tmp"
+	]
+}
